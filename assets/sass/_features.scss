@@ -1,3 +1,25 @@
 .features {
-    margin-top: 100px;
+    margin-top: 65px;
+}
+
+.features .inner {
+    display: flex;
+}
+
+.features article {
+    margin-right: 50px;    
+}
+
+.features i, .features h3 {
+    color: $primary;
+}
+
+.features i {
+    font-size: 1.5em;
+    vertical-align: -0.15em;
+    margin-right: 15px;
+}
+
+.features p {
+    text-align: justify;
 }

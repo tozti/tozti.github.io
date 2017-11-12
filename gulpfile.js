@@ -5,23 +5,23 @@ var del = require('del');
 
 var paths = {
     scripts: ['assets/js/**'],
-    vendor: [],
-    images: 'assets/img/**/*',
-    styles: 'assets/sass/**/*.scss'
+    images: 'assets/img/**',
+    styles: 'assets/sass/**',
+    fonts: 'assets/fonts/**'
 };
 
 gulp.task('clean', function() {
     return del(['build']);
 });
 
-gulp.task('scripts', ['clean', 'vendor-scripts'], function() {
+gulp.task('scripts', ['clean'], function() {
     return gulp.src('assets/js/index.js')
           .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('vendor-scripts', function () {
-    return gulp.src(paths.vendor)
-          .pipe(gulp.dest('dist/js'));
+gulp.task('fonts', function () {
+    return gulp.src(paths.fonts)
+          .pipe(gulp.dest('dist/fonts'));
 });
 
 gulp.task('images', ['clean'], function() {
@@ -46,4 +46,4 @@ gulp.task('watch', function() {
     gulp.watch(paths.styles, ['sass']);
 });
 
-gulp.task('default', ['watch', 'scripts', 'images', 'sass']);
+gulp.task('default', ['watch', 'scripts', 'images', 'sass', 'fonts']);
