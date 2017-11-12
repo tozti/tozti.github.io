@@ -448,7 +448,8 @@ header nav a {
   font-weight: 100; }
 
 header nav a.cta {
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  border-radius: 2px; }
 
 .hero {
   background: #8F9DB2;
