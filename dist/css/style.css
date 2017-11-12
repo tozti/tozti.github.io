@@ -1985,7 +1985,7 @@ p {
 
 header {
   background: #8B82C5;
-  padding: 35px 0;
+  padding: 40px 0 35px;
   color: #fff; }
 
 header .inner {
@@ -2067,10 +2067,11 @@ header nav a.cta {
   margin-top: 65px; }
 
 .features .inner {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .features article {
-  margin-right: 50px; }
+  width: 30%; }
 
 .features i, .features h3 {
   color: #8B82C5; }

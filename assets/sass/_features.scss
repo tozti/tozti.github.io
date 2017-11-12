@@ -4,10 +4,11 @@
 
 .features .inner {
     display: flex;
+    justify-content: space-between;
 }
 
 .features article {
-    margin-right: 50px;    
+    width: 30%;
 }
 
 .features i, .features h3 {

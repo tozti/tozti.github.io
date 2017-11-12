@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var uglify = require('gulp-uglify-es').default;
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
@@ -16,6 +17,7 @@ gulp.task('clean', function() {
 
 gulp.task('scripts', ['clean'], function() {
     return gulp.src('assets/js/index.js')
+          .pipe(uglify())
           .pipe(gulp.dest('dist/js'));
 });
 
