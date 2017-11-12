@@ -1,0 +1,38 @@
+.hero {
+    background: $top-color;
+    color: #fff;
+
+    overflow: hidden;
+    padding: 20px 0 0;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+}
+
+.hero img {
+    height: 370px;
+    float: left;
+    margin-top: -65px;
+    margin-right: 100px;
+    margin-left: -210px;
+}
+
+.hero h2 {
+    margin-top: 60px;
+    text-shadow: 0 1px rgba(0, 0, 0, .1);
+}
+
+.hero p {
+    text-align: justify;
+}
+
+.hero h2 span {
+    overflow: hidden;
+    border-right: .15em solid rgba(0, 0, 0, .2);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgba(0, 0, 0, .2); }
+}
