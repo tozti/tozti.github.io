@@ -30,7 +30,7 @@ body > header nav {
 body > header nav li {
     list-style: none;
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 10px;
 
     transition: transform .2s;
 
@@ -52,6 +52,5 @@ body > header nav a {
 
 body > header nav a.cta {
     border: 1px solid #fff;
-    box-shadow: 0 2px rgba(0, 0, 0, .08);
     border-radius: 2px;
 }
