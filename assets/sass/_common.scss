@@ -1,6 +1,7 @@
 html {
     font-family: $text-fonts;
     background: $bottom-color;
+    color: $text-color;
 }
 
 h2, h3 {
@@ -23,4 +24,12 @@ p {
     margin: 0 auto;
     max-width: $site-width;
     padding: 0 40px;
+}
+
+.title {
+    font-family: $text-fonts;
+    margin: 3.5em auto 1.5em;
+    font-size: 2em;
+    color: #333;
+    text-transform: uppercase;
 }

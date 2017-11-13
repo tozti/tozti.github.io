@@ -1,0 +1,16 @@
+body > footer {
+	background: #eaeaea;
+	margin-top: 7em;
+    clip-path: ellipse(130% 100% at 50% 100%);
+}
+
+body > footer .inner {
+	text-align: right;
+	padding-top: 2.2em;
+	padding-bottom: 2.2em;
+	overflow: hidden;
+}
+
+body > footer img {
+	height: 100px;
+}

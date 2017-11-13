@@ -1,5 +1,6 @@
 .hero {
-    background: $top-color;
+    background-color: $top-color;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1));
     padding: 20px 0 0;
     overflow: hidden;
     color: #fff;
@@ -9,14 +10,15 @@
 .hero img {
     height: 360px;
     float: left;
-    margin-top: -95px;
+    margin-top: -90px;
     margin-right: 95px;
     margin-left: -60px;
-    margin-bottom: -2px;
+    margin-bottom: -5px;
 }
 
 .hero h2 {
-    margin-top: 75px;
+    // margin-top: 75px;
+    margin-top: 105px;
     text-shadow: 0 2px rgba(0, 0, 0, .1);
 }
 

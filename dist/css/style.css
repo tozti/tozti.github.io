@@ -390,11 +390,12 @@ template {
   display: none; }
 
 html {
-  font-family: "Lato", sans-serif;
-  background: #fafafa; }
+  font-family: "Barlow", sans-serif;
+  background: #fafafa;
+  color: #222; }
 
 h2, h3 {
-  font-family: "Chivo", sans-serif; }
+  font-family: "Quicksand", sans-serif; }
 
 h2 {
   font-size: 2.2em; }
@@ -409,6 +410,13 @@ p {
   margin: 0 auto;
   max-width: 1150px;
   padding: 0 40px; }
+
+.title {
+  font-family: "Barlow", sans-serif;
+  margin: 3.5em auto 1.5em;
+  font-size: 2em;
+  color: #333;
+  text-transform: uppercase; }
 
 @font-face {
   font-family: 'hawcons';
@@ -1983,52 +1991,55 @@ p {
 .i-document-file-gif:before {
   content: "\e805"; }
 
-header {
+body > header {
   background: #8B82C5;
-  padding: 40px 0 35px;
+  padding: 26px 0 23px;
   color: #fff; }
 
-header .inner {
+body > header .inner {
   display: flex;
   justify-content: space-between; }
 
-header h1 {
-  font-family: "Chivo", sans-serif;
+body > header h1 {
+  font-family: "Quicksand", sans-serif;
   font-size: 1.75em;
-  text-shadow: 0 2px rgba(0, 0, 0, 0.1); }
+  text-shadow: 0 2px rgba(0, 0, 0, 0.15); }
 
-header img {
+body > header img {
   width: 50px;
   height: 50px;
   vertical-align: -16px;
   margin-right: 15px; }
 
-header nav {
-  margin-top: 20px; }
+body > header nav {
+  margin-top: 17px; }
 
-header nav li {
+body > header nav li {
   list-style: none;
   display: inline-block;
   margin-left: 15px;
   transition: transform .2s; }
-  header nav li:hover {
+  body > header nav li:hover {
     transform: translateY(-2px); }
 
-header nav a {
+body > header nav a {
   text-decoration: none;
   color: #fff;
-  font-family: "Chivo", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   font-size: 1.2em;
-  padding: 10px 18px;
-  font-weight: 100; }
+  padding: 9px 16px;
+  text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: -1px; }
 
-header nav a.cta {
-  border: 2px solid #fff;
+body > header nav a.cta {
+  border: 1px solid #fff;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.08);
   border-radius: 2px; }
 
 .hero {
-  background: #8B82C5;
+  background-color: #8B82C5;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
   padding: 20px 0 0;
   overflow: hidden;
   color: #fff;
@@ -2037,13 +2048,13 @@ header nav a.cta {
 .hero img {
   height: 360px;
   float: left;
-  margin-top: -95px;
+  margin-top: -90px;
   margin-right: 95px;
   margin-left: -60px;
-  margin-bottom: -2px; }
+  margin-bottom: -5px; }
 
 .hero h2 {
-  margin-top: 75px;
+  margin-top: 105px;
   text-shadow: 0 2px rgba(0, 0, 0, 0.1); }
 
 .hero p {
@@ -2064,25 +2075,78 @@ header nav a.cta {
     border-color: rgba(0, 0, 0, 0.2); } }
 
 .features {
-  margin-top: 65px; }
+  position: relative;
+  padding-top: 4.6em; }
+  .features:before {
+    content: '';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -30px;
+    box-shadow: 0 20px 20px 10px rgba(0, 0, 0, 0.05); }
 
 .features .inner {
   display: flex;
   justify-content: space-between; }
 
 .features article {
-  width: 30%; }
+  width: 29%; }
 
-.features i, .features h3 {
-  color: #8B82C5; }
+.features h3 {
+  color: #8B82C5;
+  text-shadow: 0 2px rgba(0, 0, 0, 0.08); }
 
 .features i {
-  font-size: 1.5em;
-  vertical-align: -0.15em;
-  margin-right: 15px; }
+  font-size: 1.3em;
+  vertical-align: -0.13em;
+  margin-right: 10px; }
 
 .features p {
   text-align: justify; }
 
-.team {
-  margin-top: 100px; }
+.team .columns {
+  column-count: 2; }
+
+.team address {
+  font-style: normal;
+  margin-bottom: 12px; }
+
+.team address:nth-child(n+10) {
+  margin-top: 16px; }
+
+.team address p {
+  display: inline-block;
+  margin: 0;
+  width: 180px;
+  text-align: right; }
+
+.team address ul {
+  display: inline-block;
+  margin: 0;
+  margin-left: 18px;
+  padding: 0; }
+
+.team address li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 2px;
+  color: #fff;
+  padding: 5px 8px;
+  background: #8B82C5;
+  letter-spacing: -1px; }
+
+body > footer {
+  background: #eaeaea;
+  margin-top: 7em;
+  clip-path: ellipse(130% 100% at 50% 100%); }
+
+body > footer .inner {
+  text-align: right;
+  padding-top: 2.2em;
+  padding-bottom: 2.2em;
+  overflow: hidden; }
+
+body > footer img {
+  height: 100px; }

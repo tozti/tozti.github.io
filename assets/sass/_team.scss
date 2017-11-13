@@ -1,3 +1,36 @@
-.team {
-	margin-top: 100px;
+.team .columns {
+	column-count: 2;
+}
+
+.team address {
+	font-style: normal;
+	margin-bottom: 12px;
+}
+
+.team address:nth-child(n+10) {
+	margin-top: 16px;
+}
+
+.team address p {
+	display: inline-block;
+	margin: 0;
+	width: 180px;
+	text-align: right;
+}
+
+.team address ul {
+	display: inline-block;
+	margin: 0;
+	margin-left: 18px;
+	padding: 0;
+}
+
+.team address li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 2px;
+	color: #fff;
+	padding: 5px 8px;
+	background: $primary;
+	letter-spacing: -1px;
 }
