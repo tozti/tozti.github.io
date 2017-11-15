@@ -2132,9 +2132,11 @@ body > header nav a.cta {
   display: inline-block;
   margin-left: 2px;
   color: #fff;
-  padding: 5px 8px;
+  padding: 4px 8px 5px;
   background: #8B82C5;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  border-radius: 2px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
 
 body > footer {
   background: #eaeaea;
