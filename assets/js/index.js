@@ -1,5 +1,5 @@
 const container = document.getElementById('words')
-const words = [container.innerText, 'réunions', 'soirées', 'évènements', 'documents', 'discussions', 'décisions']
+const words = [container.innerText, ...container.dataset.words.split(',')]
 
 const interval = 5000
 
