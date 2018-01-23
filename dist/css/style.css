@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1994,7 +1995,8 @@ p {
 body > header {
   background: #8B82C5;
   padding: 26px 0 23px;
-  color: #fff; }
+  color: #fff;
+  z-index: 2; }
 
 body > header .inner {
   display: flex;
@@ -2005,7 +2007,7 @@ body > header h1 {
   font-size: 1.75em;
   text-shadow: 0 2px rgba(0, 0, 0, 0.15); }
 
-body > header img {
+body > header .logo {
   width: 50px;
   height: 50px;
   vertical-align: -16px;
@@ -2015,11 +2017,14 @@ body > header nav {
   margin-top: 17px; }
 
 body > header nav li {
+  position: relative;
   list-style: none;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 10px; }
+
+body > header nav li.fancy {
   transition: transform .2s; }
-  body > header nav li:hover {
+  body > header nav li.fancy:hover {
     transform: translateY(-2px); }
 
 body > header nav a {
@@ -2036,6 +2041,54 @@ body > header nav a.cta {
   border: 1px solid #fff;
   border-radius: 2px; }
 
+body > header .lang-selector {
+  margin-top: -5px;
+  margin-left: 30px;
+  padding-bottom: 25px; }
+  body > header .lang-selector:after {
+    content: "▾";
+    margin-left: 10px;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2); }
+
+body > header .lang-menu {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  left: -25px;
+  right: -5px;
+  top: 55px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1); }
+  body > header .lang-menu:before {
+    position: absolute;
+    top: -15px;
+    left: 33px;
+    color: rgba(255, 255, 255, 0.1);
+    display: block;
+    content: "▲"; }
+  body > header .lang-menu li {
+    margin: 7px 17px; }
+
+body > header li:hover .lang-menu {
+  display: block; }
+
+body > header .lang-flag {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: -9px; }
+  body > header .lang-flag img {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle; }
+
 .hero {
   background-color: #8B82C5;
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
@@ -2047,13 +2100,13 @@ body > header nav a.cta {
 .hero img {
   height: 360px;
   float: left;
-  margin-top: -90px;
+  margin-top: -56px;
   margin-right: 95px;
   margin-left: -60px;
   margin-bottom: -5px; }
 
 .hero h2 {
-  margin-top: 105px;
+  margin-top: 65px;
   text-shadow: 0 2px rgba(0, 0, 0, 0.1); }
 
 .hero p {
