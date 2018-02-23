@@ -2127,15 +2127,6 @@ li:hover .lang-menu {
 .features {
   position: relative;
   padding-top: 4.6em; }
-  .features:before {
-    content: '';
-    z-index: -1;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -30px;
-    box-shadow: 0 20px 10px 10px rgba(0, 0, 0, 0.1); }
 
 .features .inner {
   display: flex;
@@ -2191,8 +2182,7 @@ li:hover .lang-menu {
 
 body > footer {
   background: #eaeaea;
-  margin-top: 7em;
-  clip-path: ellipse(130% 100% at 50% 100%); }
+  margin-top: 7em; }
 
 body > footer .inner {
   text-align: right;
