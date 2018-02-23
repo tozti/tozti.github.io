@@ -1993,7 +1993,7 @@ p {
   content: "\e805"; }
 
 body > header {
-  background: #8B82C5;
+  background: #ff5b6d;
   padding: 26px 0 23px;
   color: #fff;
   z-index: 2; }
@@ -2041,16 +2041,16 @@ body > header nav a.cta {
   border: 1px solid #fff;
   border-radius: 2px; }
 
-body > header .lang-selector {
+.lang-selector {
   margin-top: -5px;
   margin-left: 30px;
   padding-bottom: 25px; }
-  body > header .lang-selector:after {
+  .lang-selector:after {
     content: "▾";
     margin-left: 10px;
     text-shadow: 0 2px rgba(0, 0, 0, 0.2); }
 
-body > header .lang-menu {
+.lang-menu {
   display: none;
   position: absolute;
   z-index: 2;
@@ -2061,36 +2061,36 @@ body > header .lang-menu {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   box-shadow: 0 2px rgba(0, 0, 0, 0.1); }
-  body > header .lang-menu:before {
+  .lang-menu:before {
     position: absolute;
     top: -15px;
     left: 33px;
     color: rgba(255, 255, 255, 0.1);
     display: block;
     content: "▲"; }
-  body > header .lang-menu li {
+  .lang-menu li {
     margin: 7px 17px; }
 
-body > header li:hover .lang-menu {
+li:hover .lang-menu {
   display: block; }
 
-body > header .lang-flag {
+.lang-flag {
   height: 30px;
   width: 30px;
   padding: 0;
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: inline-block;
   vertical-align: -9px; }
-  body > header .lang-flag img {
+  .lang-flag img {
     height: 30px;
     width: 30px;
     vertical-align: middle; }
 
 .hero {
-  background-color: #8B82C5;
+  background-color: #ff5b6d;
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
   padding: 20px 0 0;
   overflow: hidden;
@@ -2147,7 +2147,7 @@ body > header .lang-flag {
   width: 29%; }
 
 .features h3 {
-  color: #8B82C5;
+  color: #ff5b6d;
   text-shadow: 0 2px rgba(0, 0, 0, 0.08); }
 
 .features i {
@@ -2186,7 +2186,7 @@ body > header .lang-flag {
   margin-left: 2px;
   color: #fff;
   padding: 4px 8px 5px;
-  background: #8B82C5;
+  background: #ff5b6d;
   letter-spacing: -1px;
   border-radius: 2px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
